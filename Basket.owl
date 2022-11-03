@@ -1,0 +1,803 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#"
+     xml:base="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Whatchedwith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Whatchedwith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#coach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#coach">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#comment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#comment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#commentator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#diffuse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#diffuse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#encourage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#encourage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#has">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Score"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#hasPname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#hasPname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#pname"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#join -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#join">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#juge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#juge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Ref"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#lose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#lose">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#win"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#participateIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#participateIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#playwith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#playwith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#stay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#stay">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personnel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#whach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#whach">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#whatchedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#whatchedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#win -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#win">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#dateDebut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#dateDebut">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#dateFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#dateFin">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#nationalite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#nationalite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#pname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#pname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#playwith"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Away -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Away">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PVP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Coach">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#coach"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Court -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Court">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#join"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Euroligue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Euroligue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#encourage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#whach"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Whatchedwith"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PVP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Inside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Inside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Journalist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Journalist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Media">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Outside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Outside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Fans"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PVP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PVP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player_Com -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player_Com">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Ref -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Ref">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Score">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Streaming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Streaming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TrainingCamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TrainingCamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Wplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Wplayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#commentator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#commentator">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#comment"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personn"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#AmazonPrime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#AmazonPrime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Streaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#BeOutQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#BeOutQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TV"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Colina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Colina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Ref"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#ESPN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#ESPN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TV"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#EuroLigue2017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#EuroLigue2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Euroligue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GSW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GSW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player_Com"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GSW_Lakers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GSW_Lakers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GameA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GameA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Away"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GameH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#GameH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Home"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Hafedh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Hafedh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Personnel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Hedi_Z3ayem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Hedi_Z3ayem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Journalist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Kobi_Brayent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Kobi_Brayent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Lebron_James -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Lebron_James">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA2020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA2022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA2022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#NBA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#OnsJabeur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#OnsJabeur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Oracle_arena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Oracle_arena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Court"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PabloLaso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#PabloLaso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Coach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Rades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Rades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TrainingCamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#RegularSeason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#RegularSeason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#SelenaWil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#SelenaWil"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Semi_Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Semi_Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Game"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Steph_Curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Steph_Curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Player"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Steve_kerr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Steve_kerr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Coach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Valdebebas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Valdebebas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#TrainingCamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#WiznkCenter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#WiznkCenter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Court"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#YassineTV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#YassineTV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Streaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#abderrahmen_l3ech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#abderrahmen_l3ech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#commentator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#fanI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#fanI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Inside"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#fanO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#fanO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Outside"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#null -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#null">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/Basket#Score"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
